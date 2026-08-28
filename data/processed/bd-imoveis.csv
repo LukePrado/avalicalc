@@ -1,91 +1,91 @@
-"ID";"Cidade";"Bairro";"Endereço";"Latitude";"Longitude";"Data base";"Banheiros";"Vagas de garagem";"Área privativa";"EC";"PA";"Dist mar";"Localização";"Vl unt"
-1;"João Pessoa";"Manaíra";"Avenida Maria Rosa";-7,107097;-34,83674;01/05/26;1;1;102;1;1;650;7620,48;4705,88
-2;"João Pessoa";"Altiplano Cabo Branco";"Rua Desembargador Rivaldo Pereira";-7,130666;-34,831599;01/05/26;2;1;59;3;2;800;5032,2;7118,47
-3;"João Pessoa";"Manaíra";"Rua São Gonçalo";-7,104875;-34,838604;01/05/26;3;1;106;1;1;800;7620,48;5660,28
-4;"João Pessoa";"Altiplano Cabo Branco";"Rua Maria José Caetano da Silva";-7,137932;-34,832665;01/05/26;2;1;53;2;2;1500;5032,2;6547,17
-5;"João Pessoa";"Manaíra";"Rua Vigolvino Florentino Costa";-7,102711;-34,841341;01/05/26;2;1;72;2;2;1200;7620,48;6236,11
-6;"João Pessoa";"Tambaú";"Rua Sidney Clemente Dore";-7,115882;-34,830272;01/05/26;3;2;115;3;3;600;7865,29;9565,22
-7;"João Pessoa";"Tambaú";"Avenida Infante Dom Henrique";-7,112255;-34,826553;01/05/26;5;4;298;2;2;450;7865,29;5033,56
-8;"João Pessoa";"Manaíra";"Avenida Manoel Morais";-7,110745;-34,835639;01/05/26;2;1;77;2;1;1250;7620,48;4935,05
-9;"João Pessoa";"Altiplano Cabo Branco";"Avenida João Cirilo da Silva";-7,126954;-34,82865;01/05/26;2;1;64;3;3;250;5032,2;10750
-10;"João Pessoa";"Manaíra";"Rua Francisco Claudino Pereira";-7,103314;-34,842174;01/05/26;2;1;92;2;3;1450;7620,48;7391,3
-11;"João Pessoa";"Altiplano Cabo Branco";"Rua Severino Ennes de Atayde";-7,135937;-34,831;01/05/26;3;1;80;2;1;1150;5032,2;5625
-12;"João Pessoa";"Altiplano Cabo Branco";"Rua Iracema Guedes Lins";-7,129624;-34,830943;01/05/26;2;1;62;2;3;850;5032,2;7725,81
-13;"João Pessoa";"Altiplano Cabo Branco";"Rua Josita Almeida";-7,135201;-34,82601;01/05/26;4;2;103;3;3;350;5032,2;11883,5
-14;"João Pessoa";"Altiplano Cabo Branco";"Rua Ascendino Toscano de Brito";-7,144396;-34,826367;01/05/26;1;1;44;2;2;1050;5032,2;6363,64
-15;"João Pessoa";"Manaíra";"Rua Vigolvino Florentino Costa";-7,10221;-34,841949;01/05/26;2;1;45;3;2;1200;7620,48;7222,22
-16;"João Pessoa";"Altiplano Cabo Branco";"Rua Doutor Pedro Narciso Castanheira";-7,137855;-34,831666;01/05/26;2;1;54;2;2;1350;5032,2;6237,22
-17;"João Pessoa";"Manaíra";"Avenida Sapé";-7,107966;-34,834783;01/05/26;4;3;125;3;3;550;7620,48;11600
-18;"João Pessoa";"Manaíra";"Avenida Pombal";-7,099219;-34,837175;01/05/26;3;1;69;2;3;300;7620,48;9420,29
-19;"João Pessoa";"Manaíra";"Avenida Umbuzeiro";-7,109453;-34,828681;01/05/26;1;1;71;3;3;400;7620,48;10773,24
-20;"João Pessoa";"Manaíra";"Rua Antônio Monteiro Gomes de Oliveira";-7,101746;-34,842477;01/05/26;1;1;74;1;2;1300;7620,48;5000
-21;"João Pessoa";"Manaíra";"Rua Escrivão Sebastião de Azevedo Bastos";-7,099848;-34,84266;01/05/26;2;2;75;2;3;550;7620,48;10693,33
-22;"João Pessoa";"Manaíra";"Rua Maria Eunice Guimarães Fernandes";-7,098102;-34,841354;01/05/26;4;2;120;1;2;1000;7620,48;5416,66
-23;"João Pessoa";"Altiplano Cabo Branco";"Rua Maria José Caetano da Silva";-7,138247;-34,83251;01/05/26;2;1;67;2;2;1400;5032,2;5522,39
-24;"João Pessoa";"Altiplano Cabo Branco";"Avenida João Cirilo da Silva";-7,127569;-34,8286;01/05/26;3;2;110;3;3;250;5032,2;10000
-25;"João Pessoa";"Manaíra";"Rua João Câncio";-7,100608;-34,837581;01/05/26;1;1;21;3;3;500;7620,48;15476,14
-26;"João Pessoa";"Manaíra";"Rua Escrivão Sebastião de Azevedo Bastos";-7,099483;-34,837994;01/05/26;2;1;33;2;3;550;7620,48;10709,09
-27;"João Pessoa";"Altiplano Cabo Branco";"Rua Rui Costa";-7,133471;-34,831672;01/05/26;1;1;36;3;3;1150;5032,2;12247,22
-28;"João Pessoa";"Altiplano Cabo Branco";"Rua Severino Ennes de Atayde";-7,135937;-34,831;01/05/26;2;1;50;2;2;1050;5032,2;7290
-29;"João Pessoa";"Manaíra";"Rua Doutor Severino Sílvio Guerra";-7,100531;-34,841692;01/05/26;3;2;82;2;3;950;7620,48;11817,07
-30;"João Pessoa";"Manaíra";"Rua Francisco de Assis Frade";-7,098249;-34,841001;01/05/26;3;2;72;3;3;1000;7620,48;9861,11
-31;"João Pessoa";"Manaíra";"Rua Escrivão Sebastião de Azevedo Bastos";-7,099051;-34,836756;01/05/26;1;1;35;3;3;350;7620,48;12857,14
-32;"João Pessoa";"Altiplano Cabo Branco";"Rua Desembargador José de Farias";-7,137729;-34,830493;01/05/26;2;1;70;1;1;1250;5032,2;4714,29
-33;"João Pessoa";"Manaíra";"Rua Geraldo Costa";-7,110296;-34,829626;01/05/26;2;1;120;2;1;550;7620,48;4158,33
-34;"João Pessoa";"Manaíra";"Rua Antônio Monteiro Gomes de Oliveira";-7,102003;-34,842551;01/05/26;2;1;110;1;1;1350;7620,48;3363,64
-35;"João Pessoa";"Altiplano Cabo Branco";"Rua Maria José Caetano da Silva";-7,138486;-34,832567;01/05/26;2;1;54;2;2;1400;5032,2;6574,07
-36;"João Pessoa";"Altiplano Cabo Branco";"Rua Severina Pereira da Rocha";-7,138065;-34,829409;01/05/26;1;2;120;2;2;850;5032,2;6915,83
-37;"João Pessoa";"Altiplano Cabo Branco";"Rua Severino Ennes de Atayde";-7,135939;-34,831008;01/05/26;2;1;60;2;3;900;5032,2;6866,67
-38;"João Pessoa";"Manaíra";"Rua Escrivão Sebastião de Azevedo Bastos";-7,099554;-34,839976;01/05/26;6;3;213;2;3;400;7620,48;6103,29
-39;"João Pessoa";"Manaíra";"Avenida Maria Rosa";-7,105233;-34,83848;01/05/26;1;1;55;3;2;550;7620,48;8454,55
-40;"João Pessoa";"Altiplano Cabo Branco";"Rua Professora Nair Paiva dos Santos";-7,140408;-34,827673;01/05/26;2;1;55;2;2;1000;5032,2;7036,36
-41;"João Pessoa";"Altiplano Cabo Branco";"Rua Artur Enedino dos Anjos";-7,136026;-34,828461;01/05/26;1;1;68;2;1;700;5032,2;5588,09
-42;"João Pessoa";"Altiplano Cabo Branco";"Rua Artur Enedino dos Anjos";-7,136775;-34,831492;01/05/26;2;1;68;2;2;700;5032,2;5602,79
-43;"João Pessoa";"Manaíra";"Rua Engenheiro Luciano Vareda";-7,112134;-34,830938;01/05/26;1;0;20;3;3;900;7620,48;15000
-44;"João Pessoa";"Altiplano Cabo Branco";"Rua Doutor Pedro Narciso Castanheira";-7,138375;-34,831342;01/05/26;2;1;53;2;2;1450;5032,2;6238,3
-45;"João Pessoa";"Tambaú";"Avenida Almirante Tamandaré";-7,114162;-34,822491;01/05/26;2;2;76;3;3;100;7865,29;11184,21
-46;"João Pessoa";"Altiplano Cabo Branco";"Rua Abelardo da Silva Guimarães Barreto";-7,129818;-34,828147;01/05/26;3;2;92;3;2;500;7865,29;10543,48
-47;"João Pessoa";"Manaíra";"Avenida Umbuzeiro";-7,108497;-34,829709;01/05/26;1;1;29;3;3;450;7620,48;14306,9
-48;"João Pessoa";"Bessa";"Rua Doutor Mirocene Fernando da Cunha Lima";-7,074464;-34,845539;01/05/26;3;1;63;2;2;800;4732,95;5506,35
-49;"João Pessoa";"Bessa";"Rua Presidente Arthur Bernardes";-7,064133;-34,842083;01/05/26;1;1;40;2;3;200;4732,95;9500
-50;"João Pessoa";"Bessa";"Avenida Campos Sales";-7,073983;-34,840075;01/05/26;3;2;95;2;2;650;4732,95;8210,53
-51;"João Pessoa";"Bessa";"Rua Doutor Francisco Sarmento Meira";-7,059516;-34,84478;01/05/26;1;1;57;2;3;250;4732,95;8421,05
-52;"João Pessoa";"Bessa";"Rua Presidente Venceslau Braz";-7,068089;-34,847498;01/05/26;2;1;65;1;2;1250;4732,95;5476,92
-53;"João Pessoa";"Bessa";"Avenida Presidente Afonso Pena";-7,068847;-34,838077;01/05/26;2;2;75;2;2;100;4732,95;7453,33
-54;"João Pessoa";"Bessa";"Rua Renato de Souza Maciel";-7,063331;-34,845213;01/05/26;1;1;55;2;2;550;4732,95;6363,64
-55;"João Pessoa";"Jardim Oceania";"Rua Fernando Luiz Henriques dos Santos";-7,074606;-34,831785;01/05/26;1;1;26;3;3;100;7062,24;16538,46
-56;"João Pessoa";"Bessa";"Rua Francisca Bento de Farias";-7,067516;-34,847534;01/05/26;2;1;62;2;1;1150;4732,95;5161,27
-57;"João Pessoa";"Jardim Oceania";"Rua Huerta Ferreira de Melo";-7,089903;-34,837328;01/05/26;2;1;58;2;2;350;7062,24;6379,29
-58;"João Pessoa";"Bessa";"Rua Napoleão Gomes Varela";-7,071925;-34,843033;01/05/26;2;2;82;2;3;250;4732,95;9621,95
-59;"João Pessoa";"Bessa";"Rua Paulo Roberto de Souza Acioly";-7,078167;-34,839608;01/05/26;2;1;69;2;2;850;4732,95;7536,23
-60;"João Pessoa";"Jardim Oceania";"Rua Lindolfo José Correia das Neves";-7,086759;-34,83614;01/05/26;3;2;113;3;2;200;7062,24;10973,45
-61;"João Pessoa";"Bessa";"Rua Paulo Roberto de Souza Acioly";-7,066857;-34,843713;01/05/26;2;1;60;1;1;600;4732,95;5500
-62;"João Pessoa";"Bessa";"Avenida Presidente Café Filho";-7,068022;-34,842209;01/05/26;3;1;75;3;3;400;4732,95;9426,67
-63;"João Pessoa";"Jardim Oceania";"Rua Norberto de Castro Nogueira";-7,082963;-34,834585;01/05/26;1;1;53;2;2;250;7062,24;8490,57
-64;"João Pessoa";"Bessa";"Avenida Marechal Hermes da Fonseca";-7,068568;-34,846279;01/05/26;3;2;77;3;2;450;4732,95;11168,83
-65;"João Pessoa";"Bessa";"Rua Paulo Roberto de Souza Acioly";-7,066857;-34,843713;01/05/26;2;1;74;1;1;600;4732,95;5135,14
-66;"João Pessoa";"Jardim Oceania";"Rua Doutor Abel Beltrão";-7,076529;-34,832308;01/05/26;2;1;52;2;3;200;7062,24;10000
-67;"João Pessoa";"Jardim Oceania";"Rua Valdemar Chianca";-7,089327;-34,836142;01/05/26;1;1;45;3;3;150;7062,24;12644,44
-68;"João Pessoa";"Jardim Oceania";"Rua Vereador José Francisco de Figueiredo";-7,085287;-34,839063;01/05/26;4;2;129;3;3;550;7062,24;12953,49
-69;"João Pessoa";"Jardim Oceania";"Rua Norberto de Castro Nogueira";-7,077709;-34,832474;01/05/26;3;2;91;2;3;250;7062,24;10978,02
-70;"João Pessoa";"Bessa";"Rua Doutor Damasquins Ramos Maciel";-7,073976;-34,840077;01/05/26;2;1;55;2;1;500;4732,95;6818,18
-71;"João Pessoa";"Jardim Oceania";"Rua Fernando Luiz Henriques dos Santos";-7,09445;-34,835609;01/05/26;2;1;57;2;3;200;7062,24;8684,21
-72;"João Pessoa";"Jardim Oceania";"Avenida Campos Sales";-7,073259;-34,838194;01/05/26;2;1;59;1;2;450;7062,24;7966,1
-73;"João Pessoa";"Jardim Oceania";"Rua Paulo Costa Lima";-7,074933;-34,839749;01/05/26;1;1;35;3;3;650;7062,24;10857,14
-74;"João Pessoa";"Jardim Oceania";"Rua José Gonçalves de Abrantes";-7,088275;-34,83739;01/05/26;1;1;40;2;2;450;7062,24;8975
-75;"João Pessoa";"Jardim Oceania";"Rua Cantora Maria da Glória Gouveia de Vasconcelos";-7,087506;-34,837412;01/05/26;2;1;87;1;1;450;7062,24;5172,41
-76;"João Pessoa";"Jardim Oceania";"Rua Garibaldi Teixeira de Carvalho";-7,078556;-34,833219;01/05/26;1;1;53;3;2;350;7062,24;9886
-77;"João Pessoa";"Bessa";"Rua Josué Guedes Pereira";-7,072906;-34,841112;01/05/26;4;2;93;2;3;600;4732,95;9569,89
-78;"João Pessoa";"Bessa";"Rua Francisca Bento de Farias";-7,06749;-34,847784;01/05/26;2;1;54;2;2;900;4732,95;8372,24
-79;"João Pessoa";"Bessa";"Rua Vicente Ielpo";-7,070846;-34,836718;01/05/26;2;1;52;1;1;750;4732,95;5961,54
-80;"João Pessoa";"Bessa";"Rua Maria da Penha Ribeiro de Lima";-7,059037;-34,84448;01/05/26;2;1;78;1;1;300;4732,95;4230,77
-81;"João Pessoa";"Jardim Oceania";"Avenida Governador Argemiro de Figueiredo";-7,088879;-34,834567;01/05/26;1;1;18;3;3;50;7062,24;18777,78
-82;"João Pessoa";"Bessa";"Avenida Campos Sales";-7,073983;-34,840075;01/05/26;2;1;59;2;3;550;4732,95;8135,59
-83;"João Pessoa";"Bessa";"Rua João Cabral de Lucena";-7,070762;-34,841253;01/05/26;2;1;55;3;3;450;4732,95;9000
-84;"João Pessoa";"Jardim Oceania";"Rua Huerta Ferreira de Melo";-7,089906;-34,837659;01/05/26;1;1;62;3;3;300;7062,24;13708,06
-85;"João Pessoa";"Bessa";"Rua Presidente Delfim Moreira";-7,066013;-34,844502;01/05/26;1;1;54;2;2;750;4732,95;6777,78
-86;"João Pessoa";"Jardim Oceania";"Rua José Ferreira Ramos";-7,08067;-34,837222;01/05/26;2;1;64;3;2;800;7062,24;8750
-87;"João Pessoa";"Jardim Oceania";"Rua Poeta Luiz Raimundo Batista de Carvalho";-7,081399;-34,835039;01/05/26;2;1;65;2;3;450;7062,24;9542,57
-88;"João Pessoa";"Jardim Oceania";"Rua João Navarro Filho";-7,087573;-34,838768;01/05/26;3;1;70;3;3;550;7062,24;9762,86
-89;"João Pessoa";"Jardim Oceania";"Avenida Governador Argemiro de Figueiredo";-7,086605;-34,834063;01/05/26;2;1;63;2;2;100;7062,24;7984,13
-90;"João Pessoa";"Bessa";"Rua Doutor Damasquins Ramos Maciel";-7,069175;-34,841115;01/05/26;2;1;59;3;2;350;4732,95;9491,53
+id;cidade;bairro;endereco;latitude;longitude;data_base;banheiros;vagas_garagem;area_privativa;ec;pa;dist_mar;localizacao;vl_unt
+1;João Pessoa;Manaíra;Avenida Maria Rosa;-7,107097;-34,83674;01/05/26;1;1;102;1;1;650;7620,48;4705,88
+2;João Pessoa;Altiplano Cabo Branco;Rua Desembargador Rivaldo Pereira;-7,130666;-34,831599;01/05/26;2;1;59;3;2;800;5032,2;7118,47
+3;João Pessoa;Manaíra;Rua São Gonçalo;-7,104875;-34,838604;01/05/26;3;1;106;1;1;800;7620,48;5660,28
+4;João Pessoa;Altiplano Cabo Branco;Rua Maria José Caetano da Silva;-7,137932;-34,832665;01/05/26;2;1;53;2;2;1500;5032,2;6547,17
+5;João Pessoa;Manaíra;Rua Vigolvino Florentino Costa;-7,102711;-34,841341;01/05/26;2;1;72;2;2;1200;7620,48;6236,11
+6;João Pessoa;Tambaú;Rua Sidney Clemente Dore;-7,115882;-34,830272;01/05/26;3;2;115;3;3;600;7865,29;9565,22
+7;João Pessoa;Tambaú;Avenida Infante Dom Henrique;-7,112255;-34,826553;01/05/26;5;4;298;2;2;450;7865,29;5033,56
+8;João Pessoa;Manaíra;Avenida Manoel Morais;-7,110745;-34,835639;01/05/26;2;1;77;2;1;1250;7620,48;4935,05
+9;João Pessoa;Altiplano Cabo Branco;Avenida João Cirilo da Silva;-7,126954;-34,82865;01/05/26;2;1;64;3;3;250;5032,2;10750
+10;João Pessoa;Manaíra;Rua Francisco Claudino Pereira;-7,103314;-34,842174;01/05/26;2;1;92;2;3;1450;7620,48;7391,3
+11;João Pessoa;Altiplano Cabo Branco;Rua Severino Ennes de Atayde;-7,135937;-34,831;01/05/26;3;1;80;2;1;1150;5032,2;5625
+12;João Pessoa;Altiplano Cabo Branco;Rua Iracema Guedes Lins;-7,129624;-34,830943;01/05/26;2;1;62;2;3;850;5032,2;7725,81
+13;João Pessoa;Altiplano Cabo Branco;Rua Josita Almeida;-7,135201;-34,82601;01/05/26;4;2;103;3;3;350;5032,2;11883,5
+14;João Pessoa;Altiplano Cabo Branco;Rua Ascendino Toscano de Brito;-7,144396;-34,826367;01/05/26;1;1;44;2;2;1050;5032,2;6363,64
+15;João Pessoa;Manaíra;Rua Vigolvino Florentino Costa;-7,10221;-34,841949;01/05/26;2;1;45;3;2;1200;7620,48;7222,22
+16;João Pessoa;Altiplano Cabo Branco;Rua Doutor Pedro Narciso Castanheira;-7,137855;-34,831666;01/05/26;2;1;54;2;2;1350;5032,2;6237,22
+17;João Pessoa;Manaíra;Avenida Sapé;-7,107966;-34,834783;01/05/26;4;3;125;3;3;550;7620,48;11600
+18;João Pessoa;Manaíra;Avenida Pombal;-7,099219;-34,837175;01/05/26;3;1;69;2;3;300;7620,48;9420,29
+19;João Pessoa;Manaíra;Avenida Umbuzeiro;-7,109453;-34,828681;01/05/26;1;1;71;3;3;400;7620,48;10773,24
+20;João Pessoa;Manaíra;Rua Antônio Monteiro Gomes de Oliveira;-7,101746;-34,842477;01/05/26;1;1;74;1;2;1300;7620,48;5000
+21;João Pessoa;Manaíra;Rua Escrivão Sebastião de Azevedo Bastos;-7,099848;-34,84266;01/05/26;2;2;75;2;3;550;7620,48;10693,33
+22;João Pessoa;Manaíra;Rua Maria Eunice Guimarães Fernandes;-7,098102;-34,841354;01/05/26;4;2;120;1;2;1000;7620,48;5416,66
+23;João Pessoa;Altiplano Cabo Branco;Rua Maria José Caetano da Silva;-7,138247;-34,83251;01/05/26;2;1;67;2;2;1400;5032,2;5522,39
+24;João Pessoa;Altiplano Cabo Branco;Avenida João Cirilo da Silva;-7,127569;-34,8286;01/05/26;3;2;110;3;3;250;5032,2;10000
+25;João Pessoa;Manaíra;Rua João Câncio;-7,100608;-34,837581;01/05/26;1;1;21;3;3;500;7620,48;15476,14
+26;João Pessoa;Manaíra;Rua Escrivão Sebastião de Azevedo Bastos;-7,099483;-34,837994;01/05/26;2;1;33;2;3;550;7620,48;10709,09
+27;João Pessoa;Altiplano Cabo Branco;Rua Rui Costa;-7,133471;-34,831672;01/05/26;1;1;36;3;3;1150;5032,2;12247,22
+28;João Pessoa;Altiplano Cabo Branco;Rua Severino Ennes de Atayde;-7,135937;-34,831;01/05/26;2;1;50;2;2;1050;5032,2;7290
+29;João Pessoa;Manaíra;Rua Doutor Severino Sílvio Guerra;-7,100531;-34,841692;01/05/26;3;2;82;2;3;950;7620,48;11817,07
+30;João Pessoa;Manaíra;Rua Francisco de Assis Frade;-7,098249;-34,841001;01/05/26;3;2;72;3;3;1000;7620,48;9861,11
+31;João Pessoa;Manaíra;Rua Escrivão Sebastião de Azevedo Bastos;-7,099051;-34,836756;01/05/26;1;1;35;3;3;350;7620,48;12857,14
+32;João Pessoa;Altiplano Cabo Branco;Rua Desembargador José de Farias;-7,137729;-34,830493;01/05/26;2;1;70;1;1;1250;5032,2;4714,29
+33;João Pessoa;Manaíra;Rua Geraldo Costa;-7,110296;-34,829626;01/05/26;2;1;120;2;1;550;7620,48;4158,33
+34;João Pessoa;Manaíra;Rua Antônio Monteiro Gomes de Oliveira;-7,102003;-34,842551;01/05/26;2;1;110;1;1;1350;7620,48;3363,64
+35;João Pessoa;Altiplano Cabo Branco;Rua Maria José Caetano da Silva;-7,138486;-34,832567;01/05/26;2;1;54;2;2;1400;5032,2;6574,07
+36;João Pessoa;Altiplano Cabo Branco;Rua Severina Pereira da Rocha;-7,138065;-34,829409;01/05/26;1;2;120;2;2;850;5032,2;6915,83
+37;João Pessoa;Altiplano Cabo Branco;Rua Severino Ennes de Atayde;-7,135939;-34,831008;01/05/26;2;1;60;2;3;900;5032,2;6866,67
+38;João Pessoa;Manaíra;Rua Escrivão Sebastião de Azevedo Bastos;-7,099554;-34,839976;01/05/26;6;3;213;2;3;400;7620,48;6103,29
+39;João Pessoa;Manaíra;Avenida Maria Rosa;-7,105233;-34,83848;01/05/26;1;1;55;3;2;550;7620,48;8454,55
+40;João Pessoa;Altiplano Cabo Branco;Rua Professora Nair Paiva dos Santos;-7,140408;-34,827673;01/05/26;2;1;55;2;2;1000;5032,2;7036,36
+41;João Pessoa;Altiplano Cabo Branco;Rua Artur Enedino dos Anjos;-7,136026;-34,828461;01/05/26;1;1;68;2;1;700;5032,2;5588,09
+42;João Pessoa;Altiplano Cabo Branco;Rua Artur Enedino dos Anjos;-7,136775;-34,831492;01/05/26;2;1;68;2;2;700;5032,2;5602,79
+43;João Pessoa;Manaíra;Rua Engenheiro Luciano Vareda;-7,112134;-34,830938;01/05/26;1;0;20;3;3;900;7620,48;15000
+44;João Pessoa;Altiplano Cabo Branco;Rua Doutor Pedro Narciso Castanheira;-7,138375;-34,831342;01/05/26;2;1;53;2;2;1450;5032,2;6238,3
+45;João Pessoa;Tambaú;Avenida Almirante Tamandaré;-7,114162;-34,822491;01/05/26;2;2;76;3;3;100;7865,29;11184,21
+46;João Pessoa;Altiplano Cabo Branco;Rua Abelardo da Silva Guimarães Barreto;-7,129818;-34,828147;01/05/26;3;2;92;3;2;500;7865,29;10543,48
+47;João Pessoa;Manaíra;Avenida Umbuzeiro;-7,108497;-34,829709;01/05/26;1;1;29;3;3;450;7620,48;14306,9
+48;João Pessoa;Bessa;Rua Doutor Mirocene Fernando da Cunha Lima;-7,074464;-34,845539;01/05/26;3;1;63;2;2;800;4732,95;5506,35
+49;João Pessoa;Bessa;Rua Presidente Arthur Bernardes;-7,064133;-34,842083;01/05/26;1;1;40;2;3;200;4732,95;9500
+50;João Pessoa;Bessa;Avenida Campos Sales;-7,073983;-34,840075;01/05/26;3;2;95;2;2;650;4732,95;8210,53
+51;João Pessoa;Bessa;Rua Doutor Francisco Sarmento Meira;-7,059516;-34,84478;01/05/26;1;1;57;2;3;250;4732,95;8421,05
+52;João Pessoa;Bessa;Rua Presidente Venceslau Braz;-7,068089;-34,847498;01/05/26;2;1;65;1;2;1250;4732,95;5476,92
+53;João Pessoa;Bessa;Avenida Presidente Afonso Pena;-7,068847;-34,838077;01/05/26;2;2;75;2;2;100;4732,95;7453,33
+54;João Pessoa;Bessa;Rua Renato de Souza Maciel;-7,063331;-34,845213;01/05/26;1;1;55;2;2;550;4732,95;6363,64
+55;João Pessoa;Jardim Oceania;Rua Fernando Luiz Henriques dos Santos;-7,074606;-34,831785;01/05/26;1;1;26;3;3;100;7062,24;16538,46
+56;João Pessoa;Bessa;Rua Francisca Bento de Farias;-7,067516;-34,847534;01/05/26;2;1;62;2;1;1150;4732,95;5161,27
+57;João Pessoa;Jardim Oceania;Rua Huerta Ferreira de Melo;-7,089903;-34,837328;01/05/26;2;1;58;2;2;350;7062,24;6379,29
+58;João Pessoa;Bessa;Rua Napoleão Gomes Varela;-7,071925;-34,843033;01/05/26;2;2;82;2;3;250;4732,95;9621,95
+59;João Pessoa;Bessa;Rua Paulo Roberto de Souza Acioly;-7,078167;-34,839608;01/05/26;2;1;69;2;2;850;4732,95;7536,23
+60;João Pessoa;Jardim Oceania;Rua Lindolfo José Correia das Neves;-7,086759;-34,83614;01/05/26;3;2;113;3;2;200;7062,24;10973,45
+61;João Pessoa;Bessa;Rua Paulo Roberto de Souza Acioly;-7,066857;-34,843713;01/05/26;2;1;60;1;1;600;4732,95;5500
+62;João Pessoa;Bessa;Avenida Presidente Café Filho;-7,068022;-34,842209;01/05/26;3;1;75;3;3;400;4732,95;9426,67
+63;João Pessoa;Jardim Oceania;Rua Norberto de Castro Nogueira;-7,082963;-34,834585;01/05/26;1;1;53;2;2;250;7062,24;8490,57
+64;João Pessoa;Bessa;Avenida Marechal Hermes da Fonseca;-7,068568;-34,846279;01/05/26;3;2;77;3;2;450;4732,95;11168,83
+65;João Pessoa;Bessa;Rua Paulo Roberto de Souza Acioly;-7,066857;-34,843713;01/05/26;2;1;74;1;1;600;4732,95;5135,14
+66;João Pessoa;Jardim Oceania;Rua Doutor Abel Beltrão;-7,076529;-34,832308;01/05/26;2;1;52;2;3;200;7062,24;10000
+67;João Pessoa;Jardim Oceania;Rua Valdemar Chianca;-7,089327;-34,836142;01/05/26;1;1;45;3;3;150;7062,24;12644,44
+68;João Pessoa;Jardim Oceania;Rua Vereador José Francisco de Figueiredo;-7,085287;-34,839063;01/05/26;4;2;129;3;3;550;7062,24;12953,49
+69;João Pessoa;Jardim Oceania;Rua Norberto de Castro Nogueira;-7,077709;-34,832474;01/05/26;3;2;91;2;3;250;7062,24;10978,02
+70;João Pessoa;Bessa;Rua Doutor Damasquins Ramos Maciel;-7,073976;-34,840077;01/05/26;2;1;55;2;1;500;4732,95;6818,18
+71;João Pessoa;Jardim Oceania;Rua Fernando Luiz Henriques dos Santos;-7,09445;-34,835609;01/05/26;2;1;57;2;3;200;7062,24;8684,21
+72;João Pessoa;Jardim Oceania;Avenida Campos Sales;-7,073259;-34,838194;01/05/26;2;1;59;1;2;450;7062,24;7966,1
+73;João Pessoa;Jardim Oceania;Rua Paulo Costa Lima;-7,074933;-34,839749;01/05/26;1;1;35;3;3;650;7062,24;10857,14
+74;João Pessoa;Jardim Oceania;Rua José Gonçalves de Abrantes;-7,088275;-34,83739;01/05/26;1;1;40;2;2;450;7062,24;8975
+75;João Pessoa;Jardim Oceania;Rua Cantora Maria da Glória Gouveia de Vasconcelos;-7,087506;-34,837412;01/05/26;2;1;87;1;1;450;7062,24;5172,41
+76;João Pessoa;Jardim Oceania;Rua Garibaldi Teixeira de Carvalho;-7,078556;-34,833219;01/05/26;1;1;53;3;2;350;7062,24;9886
+77;João Pessoa;Bessa;Rua Josué Guedes Pereira;-7,072906;-34,841112;01/05/26;4;2;93;2;3;600;4732,95;9569,89
+78;João Pessoa;Bessa;Rua Francisca Bento de Farias;-7,06749;-34,847784;01/05/26;2;1;54;2;2;900;4732,95;8372,24
+79;João Pessoa;Bessa;Rua Vicente Ielpo;-7,070846;-34,836718;01/05/26;2;1;52;1;1;750;4732,95;5961,54
+80;João Pessoa;Bessa;Rua Maria da Penha Ribeiro de Lima;-7,059037;-34,84448;01/05/26;2;1;78;1;1;300;4732,95;4230,77
+81;João Pessoa;Jardim Oceania;Avenida Governador Argemiro de Figueiredo;-7,088879;-34,834567;01/05/26;1;1;18;3;3;50;7062,24;18777,78
+82;João Pessoa;Bessa;Avenida Campos Sales;-7,073983;-34,840075;01/05/26;2;1;59;2;3;550;4732,95;8135,59
+83;João Pessoa;Bessa;Rua João Cabral de Lucena;-7,070762;-34,841253;01/05/26;2;1;55;3;3;450;4732,95;9000
+84;João Pessoa;Jardim Oceania;Rua Huerta Ferreira de Melo;-7,089906;-34,837659;01/05/26;1;1;62;3;3;300;7062,24;13708,06
+85;João Pessoa;Bessa;Rua Presidente Delfim Moreira;-7,066013;-34,844502;01/05/26;1;1;54;2;2;750;4732,95;6777,78
+86;João Pessoa;Jardim Oceania;Rua José Ferreira Ramos;-7,08067;-34,837222;01/05/26;2;1;64;3;2;800;7062,24;8750
+87;João Pessoa;Jardim Oceania;Rua Poeta Luiz Raimundo Batista de Carvalho;-7,081399;-34,835039;01/05/26;2;1;65;2;3;450;7062,24;9542,57
+88;João Pessoa;Jardim Oceania;Rua João Navarro Filho;-7,087573;-34,838768;01/05/26;3;1;70;3;3;550;7062,24;9762,86
+89;João Pessoa;Jardim Oceania;Avenida Governador Argemiro de Figueiredo;-7,086605;-34,834063;01/05/26;2;1;63;2;2;100;7062,24;7984,13
+90;João Pessoa;Bessa;Rua Doutor Damasquins Ramos Maciel;-7,069175;-34,841115;01/05/26;2;1;59;3;2;350;4732,95;9491,53
