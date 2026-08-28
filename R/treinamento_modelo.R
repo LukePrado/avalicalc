@@ -40,3 +40,8 @@ paste0("O valor estimado do PU é R$ ", reais(valor_real[,"fit"]),"/m2")
 paste0("Com nível de confiança de ", nivel_conf * 100,
        "% o valor real estará entre R$",reais(valor_real[,"lwr"])," e R$",
        reais(valor_real[,"upr"]))
+
+# Salva o Modelo
+saveRDS(modelo, "models/modelo_regressao.rds")
+
+message("Script Finalizado e modelo salvo")
