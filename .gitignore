@@ -12,7 +12,7 @@ data/raw/
 # Arquivos do R
 *.RData
 *.Rds
-*.rds
+#*.rds
 *.Rhistory
 .Rproj.user/
 .Rhistory
