@@ -1,0 +1,50 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+# Dados sensíveis
+data/raw/
+*.xlsx
+*.xls
+*.xlsm
+
+# Arquivos do R
+*.RData
+*.Rds
+*.rds
+*.Rhistory
+.Rproj.user/
+.Rhistory
+.RData
+
+# Documentos temporários
+docs/**/*.pdf
+docs/**/*.log
+docs/**/*.aux
+docs/**/*.bib~
+docs/**/*.blg
+docs/**/*.bbl
+docs/**/_cache/
+docs/**/_files/
+
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Ambiente
+.env
+*.sh
+
+# IDE
+.Rproj.user/
+.vscode/
+*.sublime-*
+
+# Temporários
+*~
+*.swp
+*.swo
