@@ -71,13 +71,18 @@ aba_calculadora <- layout_columns(
     card_header("Resultado da estimativa"),
     div(
       class = "d-flex flex-column align-items-center justify-content-center h-100 text-center p-3",
-      div(class = "text-muted", "Valor unitario estimado (R$/m²)"),
+      div(class = "text-muted", "Valor unitário estimado (R$/m²)"),
       div(class = "display-3 fw-bold text-primary my-2",
           textOutput("valor_fit", inline = TRUE)),
       div(class = "text-muted mt-3",
           sprintf("Intervalo de confianca (%d%%)", round(NIVEL_CONF * 100))),
       div(class = "fs-4 fw-semibold",
           textOutput("valor_ic", inline = TRUE)),
+      div(class = "mt-4 pt-3 border-top border-light",
+          div(class = "text-muted", "Valor total estimado (R$)"),
+          div(class = "display-4 fw-bold text-success my-2",
+              textOutput("valor_total", inline = TRUE))
+      ),
       div(class = "text-muted small mt-4",
           "Modelo ajustado com base em dados de mercado da area de estudo.")
     )
@@ -85,7 +90,7 @@ aba_calculadora <- layout_columns(
 )
 
 # ------------------------------------------------------------------------------
-# Aba 2: Graficos
+# Aba 2: Análise Exploratória
 # ------------------------------------------------------------------------------
 card_grafico <- function(titulo, arquivo) {
   card(
@@ -108,6 +113,42 @@ aba_graficos <- layout_columns(
 )
 
 # ------------------------------------------------------------------------------
+# Aba 3: Modelo de Regressão
+# ------------------------------------------------------------------------------
+aba_modelo <- layout_columns(
+  col_widths = 12,
+  fill = FALSE,
+  
+  card(
+    card_header("Modelo final ajustado"),
+    
+    # Título do modelo
+    div(
+      class = "text-center text-muted small mb-3",
+      "Valor unitário (R$/m²) ~ Área + Quartos + Vagas + Padrão + Distância do mar + Bairro"
+    ),
+    
+    # Tabela de coeficientes (em HTML)
+    div(
+      style = "overflow-x: auto;",
+      tableOutput("tabela_modelo")
+    ),
+    
+    # Rodapé com métricas
+    div(
+      class = "text-center text-muted small mt-3",
+      textOutput("metricas_modelo")
+    ),
+    
+    # Nota sobre significância
+    div(
+      class = "text-center text-muted small mt-2",
+      "*** p<0,001; ** p<0,01; * p<0,05"
+    )
+  )
+)
+
+# ------------------------------------------------------------------------------
 # UI
 # ------------------------------------------------------------------------------
 ui <- page_navbar(
@@ -120,7 +161,8 @@ ui <- page_navbar(
   fillable = FALSE,
   # page_navbar ja colapsa em menu "hamburguer" no mobile
   nav_panel("Calculadora", aba_calculadora),
-  nav_panel("Graficos", aba_graficos),
+  nav_panel("Análise Exploratória", aba_graficos),
+  nav_panel("Modelo de Regressão", aba_modelo),
   nav_spacer(),
   nav_item(
     tags$span(class = "navbar-text small",
@@ -159,6 +201,78 @@ server <- function(input, output, session) {
     v <- estimativa()
     paste0(reais(v[, "lwr"]), "  –  ", reais(v[, "upr"]))
   })
-}
 
+  output$valor_total <- renderText({
+    req(estimativa())
+    total <- estimativa()[, "fit"] * input$area
+    reais(total)
+  })
+  
+  # ----------------------------------------------------------------------------
+  # Tabela do modelo de regressão
+  # ----------------------------------------------------------------------------
+  
+  output$tabela_modelo <- renderTable({
+    
+    # Extrair coeficientes do modelo
+    coef <- summary(modelo)$coefficients
+    
+    # Criar dataframe com os dados
+    dados_tabela <- data.frame(
+      Variável = rownames(coef),
+      Coeficiente = coef[, 1],
+      `Erro Padrão` = coef[, 2],
+      `p-valor` = coef[, 4],
+      stringsAsFactors = FALSE
+    )
+    
+    # Formatar p-valor com estrelas
+    dados_tabela$`p-valor` <- ifelse(
+      dados_tabela$`p-valor` < 0.001,
+      "<0,001 ***",
+      ifelse(
+        dados_tabela$`p-valor` < 0.01,
+        paste0(round(dados_tabela$`p-valor`, 3), " **"),
+        ifelse(
+          dados_tabela$`p-valor` < 0.05,
+          paste0(round(dados_tabela$`p-valor`, 3), " *"),
+          as.character(round(dados_tabela$`p-valor`, 3))
+        )
+      )
+    )
+    
+    # Formatar números (substituir . por ,)
+    dados_tabela$Coeficiente <- format(round(dados_tabela$Coeficiente, 2), 
+                                       big.mark = ".", decimal.mark = ",")
+    dados_tabela$`Erro Padrão` <- format(round(dados_tabela$`Erro Padrão`, 2), 
+                                         big.mark = ".", decimal.mark = ",")
+    
+    # Substituir NA por espaço
+    dados_tabela[is.na(dados_tabela)] <- ""
+    
+    # Renomear colunas para português
+    colnames(dados_tabela) <- c("Variável", "Coeficiente", "Erro Padrão", "p-valor")
+    
+    dados_tabela
+  }, 
+  striped = TRUE,
+  hover = TRUE,
+  bordered = TRUE,
+  align = "lrrr",
+  width = "100%",
+  spacing = "m",
+  digits = 2,
+  na = "")
+  
+  output$metricas_modelo <- renderText({
+    r2_ajustado <- summary(modelo)$adj.r.squared
+    erro_padrao <- summary(modelo)$sigma
+    
+    paste0(
+      "R² ajustado: ", round(r2_ajustado, 3),
+      " | Erro padrão do modelo: ", round(erro_padrao, 2)
+    )
+  })
+  
+}
 shinyApp(ui, server)
