@@ -107,9 +107,7 @@ aba_graficos <- layout_columns(
   card_grafico("Dispersao: valor unitario vs area", "01_dispersao_valor_area.png"),
   card_grafico("Valor unitario por bairro", "02_boxplot_bairro.png"),
   card_grafico("Distribuicao do valor unitario", "03_histograma_distribuicao.png"),
-  card_grafico("Matriz de correlacao", "04_correlacao_ggplot.png"),
-  card_grafico("Residuos vs ajustados", "05_residuos_ajustados.png"),
-  card_grafico("QQ-plot dos residuos", "06_qq_plot.png")
+  card_grafico("Matriz de correlacao", "04_correlacao_ggplot.png")
 )
 
 # ------------------------------------------------------------------------------
@@ -125,7 +123,7 @@ aba_modelo <- layout_columns(
     # Título do modelo
     div(
       class = "text-center text-muted small mb-3",
-      "Valor unitário (R$/m²) ~ Área + Quartos + Vagas + Padrão + Distância do mar + Bairro"
+      "log(Valor unitário R$/m²) ~ log(Banheiros) + Vagas + log(Área privativa) + Estado de conservação + Padrão de acabamento + Distância do mar + 1/Localização"
     ),
     
     # Tabela de coeficientes (em HTML)
@@ -144,6 +142,19 @@ aba_modelo <- layout_columns(
     div(
       class = "text-center text-muted small mt-2",
       "*** p<0,001; ** p<0,01; * p<0,05"
+    )
+  ),
+
+  # Card de diagnóstico dos resíduos
+  card(
+    full_screen = TRUE,
+    card_header("Diagnóstico dos resíduos"),
+    layout_columns(
+      col_widths = c(6, 6),
+      card_image(file = NULL, src = "figures/05_residuos_ajustados.png",
+                 height = "auto", fill = FALSE, class = "img-fluid"),
+      card_image(file = NULL, src = "figures/06_qq_plot.png",
+                 height = "auto", fill = FALSE, class = "img-fluid")
     )
   )
 )
@@ -217,13 +228,30 @@ server <- function(input, output, session) {
     # Extrair coeficientes do modelo
     coef <- summary(modelo)$coefficients
     
+    # Nomes tecnicos -> nomes humanos (na ordem em que aparecem no modelo)
+    nomes_humanos <- c(
+      "(Intercept)"         = "(Intercepto)",
+      "log(banheiros)"      = "Banheiros (log)",
+      "vagas_garagem"       = "Vagas de garagem",
+      "log(area_privativa)" = "Área privativa (log)",
+      "ec"                  = "Estado de conservação",
+      "pa"                  = "Padrão de acabamento",
+      "dist_mar"            = "Distância do mar (m)",
+      "I(1/localizacao)"    = "Localização (1/valor do bairro)"
+    )
+
+    variaveis <- rownames(coef)
+    variaveis_legiveis <- ifelse(variaveis %in% names(nomes_humanos),
+                                 nomes_humanos[variaveis], variaveis)
+
     # Criar dataframe com os dados
     dados_tabela <- data.frame(
-      Variável = rownames(coef),
+      Variável = variaveis_legiveis,
       Coeficiente = coef[, 1],
       `Erro Padrão` = coef[, 2],
       `p-valor` = coef[, 4],
-      stringsAsFactors = FALSE
+      stringsAsFactors = FALSE,
+      check.names = FALSE
     )
     
     # Formatar p-valor com estrelas
