@@ -129,11 +129,18 @@ message("Gráfico: Box-plot por Bairro")
 
 grafico_histograma <- function(dados) {
 
-  # Calcular estatísticas
-  media <- mean(dados$vl_unt, na.rm = TRUE)
-  mediana <- median(dados$vl_unt, na.rm = TRUE)
+  # Criar a variável em Log
+  dados$log_vl_unt <- log(dados$vl_unt)
 
-  p <- ggplot(dados, aes(x = vl_unt)) +
+  # Calcular estatísticas em log
+  media <- mean(dados$log_vl_unt, na.rm = TRUE)
+  mediana <- median(dados$log_vl_unt, na.rm = TRUE)
+
+  # Calcular estatísticas em escala original para o subtítulo
+  media_original <- mean(dados$vl_unt, na.rm = TRUE)
+  mediana_original <- median(dados$vl_unt, na.rm = TRUE)
+
+  p <- ggplot(dados, aes(x = log_vl_unt)) +
     geom_histogram(aes(y = ..density..),
                    bins = 30,
                    fill = "#3498db",
@@ -143,10 +150,12 @@ grafico_histograma <- function(dados) {
     geom_vline(xintercept = media, color = "#2ecc71", size = 1.2, linetype = "dashed") +
     geom_vline(xintercept = mediana, color = "#e67e22", size = 1.2, linetype = "dashed") +
     labs(
-      title = "Distribuição do valor unitário (R$/m²)",
-      subtitle = paste0("Média: R$ ", format(round(media, 0), big.mark = "."),
-                        " | Mediana: R$ ", format(round(mediana, 0), big.mark = ".")),
-      x = "Valor unitário (R$/m²)",
+      title = "Distribuição do log do valor unitário",
+      subtitle = paste0(
+        "Média: ", round(media, 2), " (R$ ", format(round(media_original, 0), big.mark = "."), ")",
+        " | Mediana: ", round(mediana, 2), " (R$ ", format(round(mediana_original, 0), big.mark = "."), ")"
+      ),
+      x = "log(Valor Unitário) - ln(R$/m²)",
       y = "Densidade"
     ) +
     tema_personalizado +
@@ -165,7 +174,7 @@ p_histograma <- grafico_histograma(dados)
 ggsave("outputs/figures/03_histograma_distribuicao.png",
        p_histograma, width = 10, height = 7, dpi = 300)
 
-message("Gráfico: Histograma")
+message("Gráfico: Histograma do log do valor unitário")
 
 # ============================================
 # GRÁFICO 4: MATRIZ DE CORRELAÇÃO
