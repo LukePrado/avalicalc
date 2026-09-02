@@ -160,11 +160,11 @@ grafico_histograma <- function(dados) {
     ) +
     tema_personalizado +
     scale_x_continuous(labels = scales::comma) +
-    annotate("text", x = media * 1.3, y = 0.9 * max(density(dados$vl_unt)$y),
-             label = paste0("Média = R$ ", format(round(media, 0), big.mark = ".")),
+    annotate("text", x = media + 0.5, y = 0.9 * max(density(dados$log_vl_unt)$y),
+             label = paste0("Média = ", round(media, 2)),
              color = "#2ecc71", size = 4, fontface = "bold") +
-    annotate("text", x = mediana * 1.3, y = 0.8 * max(density(dados$vl_unt)$y),
-             label = paste0("Mediana = R$ ", format(round(mediana, 0), big.mark = ".")),
+    annotate("text", x = mediana + 0.5, y = 0.8 * max(density(dados$log_vl_unt)$y),
+             label = paste0("Mediana = ", round(mediana, 2)),
              color = "#e67e22", size = 4, fontface = "bold")
 
   return(p)
@@ -269,23 +269,40 @@ grafico_residuos_ajustados <- function(modelo) {
     Residuos_std = rstandard(modelo)
   )
 
+  # Limites dos eixos
+  x_min <- max(8, floor(min(ajustados) * 10) / 10)
+  x_max <- ceiling(max(ajustados) * 10) / 10
+  y_lim <- max(abs(residuos)) * 1.3
+
   p <- ggplot(df_residuos, aes(x = Ajustados, y = Residuos)) +
     geom_point(alpha = 0.5, color = "#3498db", size = 2.5) +
     geom_hline(yintercept = 0, color = "#e74c3c", linetype = "dashed", size = 1.2) +
     geom_smooth(method = "loess", color = "#2c3e50", se = TRUE,
                 alpha = 0.15, fill = "#3498db", size = 1) +
     labs(
-      title = "Resíduos vs Ajustados",
+      title = "Resíduos vs Ajustados (modelo em log)",
       subtitle = "Verificação da homocedasticidade e linearidade",
-      x = "Valores ajustados (R$/m²)",
-      y = "Resíduos (R$/m²)"
+      x = "Valores ajustados (log)",
+      y = "Resíduos (log)"
     ) +
     tema_personalizado +
-    scale_x_continuous(limits = c(8, NA), breaks = seq(8, 10, by = 0.5)) +
-    scale_y_continuous(labels = scales::comma) +
-    annotate("text", x = max(ajustados) * 0.7, y = max(residuos) * 0.9,
+    coord_cartesian(
+      xlim = c(x_min, x_max),
+      ylim = c(-y_lim, y_lim)
+    ) +
+    scale_x_continuous(
+      breaks = seq(x_min, x_max, by = 0.5),
+      labels = scales::number_format(accuracy = 0.1)
+    ) +
+    scale_y_continuous(
+      breaks = seq(-round(y_lim, 2), round(y_lim, 2), by = 0.1),
+      labels = scales::number_format(accuracy = 0.1)
+    ) +
+    annotate("text",
+             x = x_min + (x_max - x_min) * 0.7,
+             y = y_lim * 0.85,
              label = paste0("Variância dos resíduos: ",
-                           round(var(residuos), 2)),
+                           round(var(residuos), 4)),
              size = 4, color = "#2c3e50", hjust = 0)
 
   return(p)
