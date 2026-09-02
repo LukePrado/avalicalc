@@ -175,10 +175,7 @@ ui <- page_navbar(
   nav_panel("Análise Exploratória", aba_graficos),
   nav_panel("Modelo de Regressão", aba_modelo),
   nav_spacer(),
-  nav_item(
-    tags$span(class = "navbar-text small",
-              "Estimativa de valor de apartamentos residenciais")
-  ),
+
   nav_item(
     tags$a(
       href = "https://github.com/LukePrado/avalicalc",
