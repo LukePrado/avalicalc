@@ -174,7 +174,7 @@ aba_modelo <- layout_columns(
 # ------------------------------------------------------------------------------
 ui <- page_navbar(
   title = tags$span(
-    tags$img(src = "avalicalc3.png", height = "34px",
+    tags$img(src = "avalicalc_logo.png", height = "70px",
              class = "me-2 align-middle"),
     "AvaliCalc"
   ),
