@@ -50,7 +50,9 @@ aba_calculadora <- layout_columns(
 
   # ---- Card de entrada ----
   card(
-    card_header("Informe as caracteristicas"),
+    card_header(
+      class = "bg-dark text-white",
+      "Informe as caracteristicas"),
     selectInput("bairro", "Bairro", choices = names(bairros),
                 selected = "Manaira"),
     numericInput("area", "Area privativa (m²)", value = 80,
@@ -68,7 +70,9 @@ aba_calculadora <- layout_columns(
 
   # ---- Card de resultado ----
   card(
-    card_header("Resultado da estimativa"),
+    card_header(
+      class = "bg-dark text-white",
+      "Resultado da estimativa"),
     div(
       class = "d-flex flex-column align-items-center justify-content-center h-100 text-center p-3",
       div(class = "text-muted", "Valor unitário estimado (R$/m²)"),
@@ -95,7 +99,9 @@ aba_calculadora <- layout_columns(
 card_grafico <- function(titulo, arquivo) {
   card(
     full_screen = TRUE,
-    card_header(titulo),
+    card_header(
+      class = "bg-dark text-white",
+      titulo),
     card_image(file = NULL, src = file.path("figures", arquivo),
                height = "auto", fill = FALSE,
                class = "img-fluid")
@@ -118,7 +124,9 @@ aba_modelo <- layout_columns(
   fill = FALSE,
   
   card(
-    card_header("Modelo final ajustado"),
+    card_header(
+      class = "bg-dark text-white",
+      "Modelo final ajustado"),
     
     # Título do modelo
     div(
@@ -148,7 +156,9 @@ aba_modelo <- layout_columns(
   # Card de diagnóstico dos resíduos
   card(
     full_screen = TRUE,
-    card_header("Diagnóstico dos resíduos"),
+    card_header(
+      class = "bg-dark text-white",
+      "Diagnóstico dos resíduos"),
     layout_columns(
       col_widths = c(6, 6),
       card_image(file = NULL, src = "figures/05_residuos_ajustados.png",
@@ -170,7 +180,10 @@ ui <- page_navbar(
   ),
   theme = tema,
   fillable = FALSE,
-  # page_navbar ja colapsa em menu "hamburguer" no mobile
+  bg = "#1b4f72",        
+  inverse = TRUE, 
+  
+  # page_navbar
   nav_panel("Calculadora", aba_calculadora),
   nav_panel("Análise Exploratória", aba_graficos),
   nav_panel("Modelo de Regressão", aba_modelo),
@@ -286,7 +299,7 @@ server <- function(input, output, session) {
     )
     
     # Formatar números (substituir . por ,)
-    dados_tabela$Coeficiente <- format(round(dados_tabela$Coeficiente, 2), 
+    dados_tabela$Coeficiente <- format(round(dados_tabela$Coeficiente, 6), 
                                        big.mark = ".", decimal.mark = ",")
     dados_tabela$`Erro Padrão` <- format(round(dados_tabela$`Erro Padrão`, 2), 
                                          big.mark = ".", decimal.mark = ",")
@@ -305,7 +318,7 @@ server <- function(input, output, session) {
   align = "lrrr",
   width = "100%",
   spacing = "m",
-  digits = 2,
+  digits = 6,
   na = "")
   
   output$metricas_modelo <- renderText({
