@@ -51,7 +51,7 @@ aba_calculadora <- layout_columns(
   # ---- Card de entrada ----
   card(
     card_header(
-      class = "bg-dark text-white",
+      class = "bg-primary text-white",
       "Informe as caracteristicas"),
     selectInput("bairro", "Bairro", choices = names(bairros),
                 selected = "Manaira"),
@@ -71,7 +71,7 @@ aba_calculadora <- layout_columns(
   # ---- Card de resultado ----
   card(
     card_header(
-      class = "bg-dark text-white",
+      class = "bg-primary text-white",
       "Resultado da estimativa"),
     div(
       class = "d-flex flex-column align-items-center justify-content-center h-100 text-center p-3",
@@ -100,7 +100,7 @@ card_grafico <- function(titulo, arquivo) {
   card(
     full_screen = TRUE,
     card_header(
-      class = "bg-dark text-white",
+      class = "bg-primary text-white",
       titulo),
     card_image(file = NULL, src = file.path("figures", arquivo),
                height = "auto", fill = FALSE,
@@ -125,7 +125,7 @@ aba_modelo <- layout_columns(
   
   card(
     card_header(
-      class = "bg-dark text-white",
+      class = "bg-primary text-white",
       "Modelo final ajustado"),
     
     # Título do modelo
@@ -157,7 +157,7 @@ aba_modelo <- layout_columns(
   card(
     full_screen = TRUE,
     card_header(
-      class = "bg-dark text-white",
+      class = "bg-primary text-white",
       "Diagnóstico dos resíduos"),
     layout_columns(
       col_widths = c(6, 6),
@@ -322,11 +322,11 @@ server <- function(input, output, session) {
   na = "")
   
   output$metricas_modelo <- renderText({
-    r2_ajustado <- summary(modelo)$adj.r.squared
+    r2<- summary(modelo)$r.squared
     erro_padrao <- summary(modelo)$sigma
     
     paste0(
-      "R² ajustado: ", round(r2_ajustado, 3),
+      "R²: ", round(r2, 3),
       " | Erro padrão do modelo: ", round(erro_padrao, 2)
     )
   })
