@@ -5,8 +5,9 @@ account: lucianoprado
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 17786148
-bundleId: 12484961
+bundleId: 12515601
 url: https://lucianoprado.shinyapps.io/avalicalc/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: .RData
